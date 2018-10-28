@@ -14,17 +14,13 @@ Clone this repo
 $ git clone git@github.com:VICEMedia/advanced-typescript.git
 ```
 
-Install dependencies
-
-```bash
-$ npm install
-```
-
 ## Running things
 
 In order to run the presentation, use the following npm command:
 
 ```bash
+$ cd presentation
+$ npm install
 $ npm run presentation
 ```
 
@@ -33,6 +29,8 @@ This will start up the presentation and also open a new tab in your browser with
 In order to run the application, use:
 
 ```bash
+$ cd exercise
+$ npm install
 $ npm start
 ```
 

@@ -12,11 +12,9 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "typeRoots" : ["./typings"]
   },
-  "include": [
-    "src/**/*"
-  ],
   "exclude": [
     "node_modules",
     "build",
@@ -24,6 +22,7 @@
     "presentation"
   ],
   "types": [
-    "typePatches"
-  ]
+    "typePatches",
+    "node"
+  ],
 }
