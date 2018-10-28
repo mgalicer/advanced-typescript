@@ -1,0 +1,29 @@
+{
+  "name": "advanced-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "presentation": "mdx-deck presentation/deck.mdx"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "react-addons-test-utils": "^15.4.2",
+    "react-scripts-ts": "1.0.6"
+  },
+  "dependencies": {
+    "@types/node": "^7.10.0",
+    "@types/react": "^15.6.6",
+    "@types/react-dom": "^0.14.22",
+    "@types/react-redux": "^4.4.36",
+    "mdx-deck": "1.7.7",
+    "mdx-deck-code-surfer": "0.5.3",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "typescript": "^3.1.3"
+  }
+}
