@@ -2,7 +2,7 @@ export { default as theme } from './theme';
 
 import { CodeSurfer } from 'mdx-deck-code-surfer';
 
-# Advanced TypeScript
+# Advanced TypeScript & React
 
 <div>
   <img
@@ -49,14 +49,57 @@ pass: v!celand
 
 ---
 
+<CodeSurfer
+  title='Common types'
+  code={ require('!raw-loader!./snippets/types-example.ts') }
+  lang='typescript'
+/>
+
+---
+
+<CodeSurfer
+  title='Interfaces'
+  code={ require('!raw-loader!./snippets/interfaces-example.ts') }
+  lang='typescript'
+/>
+
+---
+
+## Installing type annotations
+
+```bash
+$ npm install --save request
+$ npm install --save request-promise-native
+$ npm install --save @types/request-promise-native
+```
+
+---
+
 # This lesson will cover
 
+* defining React props & states using interfaces
 * generics
-* defining props & states using interfaces
+* extending interfaces
+* making a React app using TypeScript & TSX
 
 ---
 
 # Generics
 
+Generics are components that can work over a variety of types instead of just one.
+
 ---
+
+<CodeSurfer
+  title='Generics'
+  code={ require('!raw-loader!./snippets/generics-example.tsx') }
+  lang='typescript'
+  steps={[
+    {},
+    { lines: [11], notes: 'React.Component is generically typed' },
+  ]}
+/>
+
+---
+
 
