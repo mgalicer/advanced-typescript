@@ -84,14 +84,8 @@ $ npm install --save @types/request-promise-native
 
 ---
 
-# Generics
-
-Generics are components that can work over a variety of types instead of just one.
-
----
-
 <CodeSurfer
-  title='Generics'
+  title='Props & State interfaces'
   code={ require('!raw-loader!./snippets/generics-example.tsx') }
   lang='typescript'
   steps={[
@@ -102,4 +96,45 @@ Generics are components that can work over a variety of types instead of just on
 
 ---
 
+# Generics
+
+Generics are components that can work over a variety of types instead of just one.
+
+---
+
+# Extends keyword
+
+Much like classes can extend other classes in JavaScript, interfaces can extend other interfaces.
+
+Extending interfaces can help keep type definitions DRY, and make components more reuseable.
+
+---
+
+<CodeSurfer
+  title='Extending an interface'
+  code={ require('!raw-loader!./snippets/extends-example.ts') }
+  lang='typescript'
+  steps={[
+    {},
+    { range: [1, 4], notes: 'MyMonsterBase is an interface for all monster-related components to use' },
+    { range: [6, 10], notes: 'Anything implementing MyMonster must also include all attributes from MyMonsterBase' },
+    { range: [12, 16], notes: 'MyZombie will now need to have all attributes from MyMonster and MyMonsterBase' },
+  ]}
+/>
+
+---
+
+# Let's write a monster maker using React
+
+---
+
+# Thanks for attending
+
+We really value your feedback! Please take a minute to fill out this form:
+
+[bit.ly/wwc-vice-ts-advanced](http://bit.ly/wwc-vice-ts-advanced)
+
+We're also looking for amazing talent to join our engineering team:
+
+[grnh.se/or2rumg61](https://grnh.se/or2rumg61)
 
