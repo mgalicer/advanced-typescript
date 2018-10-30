@@ -32,14 +32,10 @@ pass: v!celand
 
 ---
 
-<!-- TODO update this list -->
 # Your Instructors
 
-* Aaron Dayalan
 * CJ DiMaggio
 * George Bajuscik
-* Jiaqi Liu
-* Joshua Thomas Wise
 * Nolan Leung
 * Paul Fielek
 
@@ -77,22 +73,10 @@ $ npm install --save @types/request-promise-native
 
 # This lesson will cover
 
-* defining React props & states using interfaces
 * generics
+* defining React props & states using interfaces
 * extending interfaces
 * making a React app using TypeScript & TSX
-
----
-
-<CodeSurfer
-  title='Props & State interfaces'
-  code={ require('!raw-loader!./snippets/generics-example.tsx') }
-  lang='typescript'
-  steps={[
-    {},
-    { lines: [11], notes: 'React.Component is generically typed' },
-  ]}
-/>
 
 ---
 
@@ -102,11 +86,38 @@ Generics are components that can work over a variety of types instead of just on
 
 ---
 
+<CodeSurfer
+  title='Props & State interfaces'
+  code={ require('!raw-loader!./snippets/generics-example.tsx') }
+  lang='typescript'
+  steps={[
+    {},
+    { range: [1, 10], notes: 'interfaces for props and state' },
+    { lines: [11], notes: 'React.Component is generically typed' },
+  ]}
+/>
+
+---
+
 # Extends keyword
 
 Much like classes can extend other classes in JavaScript, interfaces can extend other interfaces.
 
 Extending interfaces can help keep type definitions DRY, and make components more reuseable.
+
+---
+
+<CodeSurfer
+  title='Extending a class'
+  code={ require('!raw-loader!./snippets/class-extends-example.ts') }
+  lang='typescript'
+  steps={[
+    {},
+    { range: [1, 3], notes: 'MyBloodsucker is a class with just one field' },
+    { range: [4, 9], notes: 'MyVampire is its own class, but also extends MyBloodsucker' },
+    { range: [11, 12], notes: 'as a result, MyVampire has inherited the pintsConsumed field' },
+  ]}
+/>
 
 ---
 
@@ -124,7 +135,12 @@ Extending interfaces can help keep type definitions DRY, and make components mor
 
 ---
 
-# Let's write a monster maker using React
+# Monster maker using React
+
+* Write an interface for all monsters
+* Write classes for your favorite monsters that implement the Monster class
+* Create a component that can display all monsters
+* Give the monsters the ability to feed with specific text for each class
 
 ---
 
